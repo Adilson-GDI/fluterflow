@@ -10,7 +10,7 @@ workflows:
       groups:
         - group_name
       vars:
-        PUBLIC_ENV_VAR: "value here"
+        PUBLIC_ENV_VAR: "1.0.0"
       flutter: stable
       xcode: latest
     cache:
