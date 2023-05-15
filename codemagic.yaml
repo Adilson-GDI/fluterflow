@@ -8,14 +8,14 @@ workflows:
     max_build_duration: 120
     environment:
       groups:
-        - group_name
+    
       vars:
         PUBLIC_ENV_VAR: "1.0.0"
       flutter: stable
       xcode: latest
     cache:
       cache_paths:
-        - ~/.pub-cache
+        
     triggering:
       events:
         - push
@@ -27,7 +27,6 @@ workflows:
     scripts:
       - ...
     artifacts:
-      - build/**/outputs/bundle/**/*.aab
     publishing:
       email:
         recipients:
