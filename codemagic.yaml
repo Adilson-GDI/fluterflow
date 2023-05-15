@@ -15,7 +15,7 @@ workflows:
       xcode: latest
     cache:
       cache_paths:
-   
+        - ~/.pub-cache
     triggering:
       events:
         - push
@@ -27,6 +27,7 @@ workflows:
     scripts:
       - ...
     artifacts:
+
     publishing:
       email:
         recipients:
