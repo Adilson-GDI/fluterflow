@@ -27,7 +27,7 @@ workflows:
     scripts:
       - ...
     artifacts:
-
+      - build/**/outputs/**/*.aab
     publishing:
       email:
         recipients:
